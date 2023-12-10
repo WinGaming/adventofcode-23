@@ -15,12 +15,24 @@ class Path {
         return new Path(newArray);
     }
 
+    public Coord[] getFields() {
+        return fields;
+    }
+
     public int getLength() {
         return this.fields.length;
     }
 
     public Coord getLastElement() {
         return fields[fields.length - 1];
+    }
+
+    public boolean contains(Coord coord) {
+        for (Coord field : this.fields) {
+            if (field.equals(coord)) return true;
+        }
+
+        return false;
     }
 
     public boolean containsCoordIgnoreReverse(Coord coord) {
