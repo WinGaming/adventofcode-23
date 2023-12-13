@@ -25,6 +25,18 @@ split_input(Out) :-
 % unknown_indicies(Source, Out) :- nth0(Out, Source, '?').
 is_unknown(Char) :- append([Char], [], ['?']).
 
+% reduce_line_are(Data, Groups, NewData, NewGroup) :- 
+
+% reduce_line(Row, NewRow) :-
+%     nth0(0, Row, Data),
+%     nth0(1, Row, Groups),
+%     .
+
+% validate_resolved(Row) :-
+%     nth0(0, Row, Data),
+%     nth0(1, Row, Groups),
+%     .
+
 % test(Source, Out) :- maplist(is_unknown, Source, Out).
 
 % resolve_line(RowChars) :-
