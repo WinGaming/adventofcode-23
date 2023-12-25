@@ -1,0 +1,1 @@
+Please note: Some UIs like phpmyadmin will not display the final select, so it may be necessarry to run it seperatly
